@@ -28,7 +28,7 @@ const NewAppointment = async ({params: {userId}}: SearchParamProps) => {
           />
 
           <p className="copyright mt-10 py-12 ">
-            © 2024 CarePluse
+            © 2024 CarePulse
           </p>      
         </div>
       </section>
