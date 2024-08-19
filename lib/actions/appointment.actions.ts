@@ -32,7 +32,7 @@ export const getRecentAppointments = async () => {
     const appointments = await databases.listDocuments(
       process.env.NEXT_PUBLIC_DATABASE_ID!,
       process.env.NEXT_PUBLIC_APPOINTMENT_COLLECTION_ID!,
-      []
+      [Query.orderDesc("$createdAt")]
     );
 
       const initialCounts = {
